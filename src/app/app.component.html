@@ -1,0 +1,30 @@
+<div noselect class="titlebar_wrapper" id="titlebar">
+  <div class="titlebar_button_wrapper" id="titlebar_button" menu>
+    <div class="titlebar_button_menu" id="titlebar_button_menu" active>menu</div>
+    <div class="titlebar_button_close" id="titlebar_button_close">close</div>
+  </div>
+  <a mat-ripple light class="titlebar_text" routerLink="" id="titlebar_text">Almanor Computer Repair</a>
+  <a mat-ripple light class="titlebar_text_mini" routerLink="" id="titlebar_text_mini">ACR</a>
+</div>
+
+<div class="navbar_wrapper" noselect id="navbar">
+  <a class="navbar_item_wrapper" mat-ripple routerLinkActive="active" routerLink="services" id="navbar_item_services" STYLE="DISPLAY: NONE">
+    <div class="navbar_item_icon">support_agent</div>
+    <div class="navbar_item_text">Services</div>
+  </a>
+  <a class="navbar_item_wrapper" mat-ripple routerLinkActive="active" routerLink="pricing" id="navbar_item_pricing">
+    <div class="navbar_item_icon">payment</div>
+    <div class="navbar_item_text">Pricing</div>
+  </a>
+  <div class="navbar_spacer"></div>
+  <a class="navbar_item_wrapper" mat-ripple routerLinkActive="active" routerLink="schedule" id="navbar_item_schedule">
+    <div class="navbar_item_icon">event</div>
+    <div class="navbar_item_text">Schedule Appointment</div>
+  </a>
+</div>
+
+<div class="navbar_mask" id="navmask" style="display: none"></div>
+
+<div class="content_wrapper">
+  <router-outlet></router-outlet>
+</div>

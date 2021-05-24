@@ -1,0 +1,143 @@
+<h1>Schedule an Appointment</h1>
+
+<h3>This part of the website is under construction.</h3>
+
+<!--
+<div class="expansion_wrapper">
+  <mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Basic Info</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div style="color: #888;">First, we'll collect some basic info in case we need to contact you.</div><br />
+
+      <div>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input matInput autocomplete="given-name" required autofocus id="input_fname">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput autocomplete="family-name" required id="input_lname">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Phone Number</mat-label>
+          <span matPrefix>+1 &nbsp;</span>
+          <input type="tel" autocomplete="phone" required matInput id="input_pnumber">
+        </mat-form-field>
+      </div>
+
+      <mat-action-row>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Location</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div style="color: #888;">Next, where would you like your computer to be worked on?</div><br />
+
+      <mat-radio-group>
+        <mat-radio-button value="1" (change)="addressChange(0)">ACR Apartment</mat-radio-button>&nbsp;(<a href="https://goo.gl/maps/aNHXZh95R4JpeSqLA" target="_blank" style="color: black;">645 Pearl Rd., Chester, CA 96020</a>)<br /><br />
+        <mat-radio-button value="2" (change)="addressChange(1)">Another Place</mat-radio-button>
+
+        <div class="div_scaleIn" *ngIf="addressInputVisible == 1">
+          <mat-form-field id="input_address">
+            <mat-label>Address</mat-label>
+            <input type="text" autocomplete="street-address" id="input_location_street" matInput>
+          </mat-form-field>
+        </div>
+
+        <div class="div_scaleIn" *ngIf="addressInputVisible == 1">
+          <mat-form-field id="input_address">
+            <mat-label>Town</mat-label>
+            <input type="text" autocomplete="address-level2" id="input_location_city" matInput>
+          </mat-form-field>
+        </div>
+
+        <div class="div_scaleIn" *ngIf="addressInputVisible == 1">
+          <mat-form-field id="input_address">
+            <mat-label>State</mat-label>
+            <input type="text" autocomplete="address-level1" id="input_location_state" matInput>
+          </mat-form-field>
+        </div>
+
+      </mat-radio-group>
+
+      <mat-action-row>
+        <button mat-button (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Billing</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div style="color: #888;">Lastly, where should the bill go?</div><br />
+
+      <mat-radio-group>
+        <mat-radio-button value="1" (change)="billingChange(0)">Pay at Site</mat-radio-button><br /><br />
+        <mat-radio-button value="2" (change)="billingChange(1)">Mail to Me</mat-radio-button>
+      </mat-radio-group>
+
+      <div class="div_scaleIn" *ngIf="billingInputVisible == 1">
+        <mat-form-field id="input_address">
+          <mat-label>Address</mat-label>
+          <input type="text" autocomplete="street-address" id="input_billing_street" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="div_scaleIn" *ngIf="billingInputVisible == 1">
+        <mat-form-field id="input_address">
+          <mat-label>Town</mat-label>
+          <input type="text" autocomplete="address-level2" id="input_billing_city" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="div_scaleIn" *ngIf="billingInputVisible == 1">
+        <mat-form-field id="input_address">
+          <mat-label>State</mat-label>
+          <input type="text" autocomplete="address-level1" id="input_billing_state" matInput>
+        </mat-form-field>
+      </div>
+
+      <mat-action-row>
+        <button mat-button (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()" id="button_review">Review</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div id="dialog_box" class="review_dialog_wrapper">
+  <div class="review_dialog" id="review_dialog">
+    <div class="review_dialog_title">Everything Look Correct?</div>
+    <div class="review_dialog_info_wrapper">
+      <div class="review_dialog_info_text" id="diag_name">Name: </div>
+      <div class="review_dialog_info_text" id="diag_num">Phone Number: </div>
+      <div class="review_dialog_info_text" id="diag_servAddr">Service Address: </div>
+      <div class="review_dialog_info_text" id="diag_billAddr">Billing: </div>
+    </div>
+    <div class="review_dialog_response_wrapper">
+      <div class="horizontal-spacer"></div>
+      <button mat-button class="review_dialog_response_button" id="dialog_cancel">Cancel</button>
+      <button mat-raised-button color="primary" class="review_dialog_response_button" id="dialog_continue">Continue</button>
+    </div>
+  </div>
+  <div class="date-time_dialog">
+    
+  </div>
+</div>
+-->
+<div class="review_dialog_mask" id="dialog_mask"></div>

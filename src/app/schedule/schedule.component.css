@@ -1,0 +1,101 @@
+@keyframes scaleIn {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+h1 {
+  margin: 48px auto 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 48px auto 0;
+  font-weight: 400;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 24px auto 0;
+  max-width: calc(100vw * 0.9);
+  font-weight: 400;
+  color: #444;
+}
+
+
+.expansion_wrapper {
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.div_scaleIn {
+    animation: scaleIn 0.2s ease-in-out;
+    padding-top: 12px;
+}
+
+/* Just here to fix the weird "active" gray background when selecting "Next". */
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]), .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]), .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background: white!important;
+}
+
+
+.review_dialog_wrapper {
+    padding: 12px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.42);
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    transition: 0.3s;
+    animation: none;
+    z-index: 5;
+}
+
+.review_dialog_title {
+    font-size: 24px;
+    margin: 12px 0 24px;
+    text-align: center;
+}
+
+.review_dialog_info_wrapper > * {
+  font-size: 16px;
+}
+
+.review_dialog_response_wrapper {
+    display: flex;
+    margin-top: 12px;
+}
+
+.horizontal-spacer {
+    flex: 1 0 auto;
+}
+
+.review_dialog_response_button {
+    margin-left: 8px;
+}
+
+.review_dialog_mask {
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: calc(100vh - 56px);
+  background: #0000004f;
+  top: 56px;
+  position: fixed;
+  transition: 0.3s;
+  z-index: 4;
+}

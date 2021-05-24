@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Coda Regular";
+  src: url("/assets/fonts/Coda-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/material-icons.woff2") format('woff2');
+}
+
+
+
+@keyframes base_fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes base_fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+html, body {
+    height: 100%;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.content_wrapper > * > * {   
+  animation: base_fadeUp 0.3s cubic-bezier(0, 0, 0, 1);
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.titlebar_wrapper > * {
+    animation: base_fadeIn 0.3s linear;
+}
+
+.mat-radio-button .mat-radio-ripple {
+    display: none;
+}
